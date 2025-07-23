@@ -1,40 +1,126 @@
-
-/*html{
+/* Strictly to set the background color of the html document */
+html{
     background-color: burlywood;
 }
-*/
-.box{
-    margin: auto;
-    padding-right: 20%;
-    background-color: beige;
-    width: 30px;
-    height: 50vh;
-    vertical-align: left;
-    border-radius: 2px solid black;
-    box-shadow: 2rem rgba(0, 0, 0, 0.8);
+
+/* wild card */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+/* setting initial spacing for words and their padding from each other*/
+p, h2, h3, h4 {
+    padding: 10px;
+    word-spacing: 2;
+}
+h3{
+    text-decoration: underline;
+}
+
+/* A background div for a title atop a ticket */
+#title-tag {
+    margin: auto;
+    background-color: rgb(37, 177, 100);
+    border:  2px solid black;
+    width: 60%;
+    height: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+/* A div designed to look like a ticket */
+#ticket{
+    background-color: beige; 
+    width: 80%; 
+    height: 80%; 
+    margin: auto; 
+    border: 2px solid black;
+    text-align: center;
+}
+.box{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translateY(-30%);
+    background-color: rgba(241, 223, 172, 0.795);
+    width: 40vw;
+    height: 40vh;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 35%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+}
+
+/* Strictly for identifying text elements to give them an underline decoration */
+#underline{
+    text-decoration: underline;
+}
+
 /* for top nav bar */
 .nav-bar{
-    background-color: bisque;
-    display: block;
+    background-color: beige;
+    padding: 0 1rem;
     position: fixed;
+    z-index: 99;
     width: 100%;
     height: 10%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-h1{
+.nav-bar > h1{
     text-transform: capitalize;
-    border-bottom: solid black;
-    width: auto;
+    padding-left: 20%;
+    padding-top: 20px;
 }
 
 /* for the hero image */
 #Hero{
-    background: url("../images/scouts.png") no-repeat center center/cover;
+    height: 700px;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px
+    background: url("../images/scouts.png") no-repeat center center/cover;
+    background-position: top center;
+    position: relative;
 }
+
+/* For the message box on hero image*/
 .hero-div{
-    margin: -1;
-    left: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 20%;
+}
+
+/* For the main body of my html page */
+.container{
+    background-color: beige;
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    align-items: flex-start;
+}
+
+
+
+/* for images on the page */
+.img{
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+
+.card{
+    background-color: bisque;
+    width: 30%;
+    height: 50%;
+    border: 2.5px solid black;
+    border-radius: 5px round;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+}
+
+.card > div{
+
 }
