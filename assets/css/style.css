@@ -18,6 +18,9 @@ p, h2, h3, h4 {
 h3{
     text-decoration: underline;
 }
+p{
+    font-size: larger;
+}
 
 /* A background div for a title atop a ticket */
 #title-tag {
@@ -115,6 +118,7 @@ h3{
 
 /* for images on the page */
 .card {
+    display: flex;
     background-color: rgb(216, 176, 127);
     width: 100%;
     border: 2.5px solid black;
@@ -133,8 +137,11 @@ h3{
 }
 
 .text-content {
+    display: inline;
     flex: 1;
-    padding: 0 1rem;
+    padding: 0 20%;
+    text-align: center;
 }
+
 
 
