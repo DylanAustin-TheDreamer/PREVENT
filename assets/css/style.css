@@ -1,6 +1,6 @@
 /* Strictly to set the background color of the html document */
 html{
-    background-color: burlywood;
+    background-color:cadetblue;
 }
 
 /* wild card */
@@ -44,7 +44,7 @@ h3{
     top: 80%;
     left: 40%;
     transform: translateY(-30%);
-    background-color: rgba(241, 223, 172, 0.795);
+    background-color: rgba(216, 176, 127, 0.8);
     width: 40vw;
     height: 40vh;
     padding: 2rem;
@@ -60,7 +60,8 @@ h3{
 
 /* for top nav bar */
 .nav-bar{
-    background-color: beige;
+    margin: auto;
+    background-color: cadetblue;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -69,12 +70,19 @@ h3{
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: baseline center;
+    padding-left: 17%
 }
 .nav-bar > h1{
     text-transform: capitalize;
     padding-left: 20%;
     padding-top: 20px;
+}
+
+.nav-bar-middle{
+    background-color: rgb(216, 176, 127);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.7);
+    width: 80%;
 }
 
 /* for the hero image */
@@ -96,31 +104,37 @@ h3{
 
 /* For the main body of my html page */
 .container{
-    background-color: beige;
+    background-color: rgb(216, 176, 127);
     width: 65%;
     height: 100%;
     margin: auto;
-    align-items: flex-start;
+    padding-top: 8%;
 }
 
 
 
 /* for images on the page */
-.img{
-    width: 50%;
-    height: 50%;
+.card {
+    background-color: rgb(216, 176, 127);
+    width: 100%;
+    border: 2.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center; /* vertically center the items */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.img {
+    width: 40%;
+    height: auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
 }
 
-.card{
-    background-color: bisque;
-    width: 30%;
-    height: 50%;
-    border: 2.5px solid black;
-    border-radius: 5px round;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+.text-content {
+    flex: 1;
+    padding: 0 1rem;
 }
 
-.card > div{
 
-}
