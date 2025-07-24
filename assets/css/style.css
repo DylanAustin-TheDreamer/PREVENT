@@ -14,12 +14,22 @@ html{
 p, h2, h3, h4 {
     padding: 10px;
     word-spacing: 2;
+    width: 500px;
 }
 h3{
     text-decoration: underline;
 }
 p{
     font-size: larger;
+    
+}
+
+/* This is to set up the navigation page links to a nicer design */
+nav{
+    align-items: flex-end;
+}
+a{
+
 }
 
 /* A background div for a title atop a ticket */
@@ -86,6 +96,9 @@ p{
     background-color: rgb(216, 176, 127);
     box-shadow: 0 5px rgba(0, 0, 0, 0.7);
     width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 /* for the hero image */
@@ -131,16 +144,19 @@ p{
 }
 
 .img {
-    width: 40%;
+    width: 70%;
     height: auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+    z-index: 0;
 }
 
 .text-content {
-    display: inline;
+    display: block;
     flex: 1;
     padding: 0 20%;
     text-align: center;
+    z-index: 1;
+    width: auto;
 }
 
 
