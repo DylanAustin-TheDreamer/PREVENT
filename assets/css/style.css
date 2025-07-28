@@ -134,6 +134,16 @@ a{
     padding-top: 8%;
 }
 
+/* For the box around the cars */
+.car-box{
+    
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+    border: #3a3a3a 8px dotted;
+    border-radius: 15px;
+}
+
 
 
 /* for images on the page */
