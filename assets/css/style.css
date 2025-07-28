@@ -140,6 +140,7 @@ a{
     width: 65%;
     margin: auto;
     padding: 10px;
+    padding-bottom: 25px;
     border: #3a3a3a 8px dotted;
     border-radius: 15px;
 }
