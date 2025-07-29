@@ -60,11 +60,15 @@ a{
     width: 80%; 
     height: auto; 
     margin: auto; 
-    border: 2px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    border-left: #3a3a3a 8px dotted;
+    border-right: #3a3a3a 8px dotted;
     text-align: center;
 }
 
 ul{
+    list-style-type: none;
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -225,7 +229,7 @@ ul{
 }
 
 .empty{
-    height: 200px;
+    height: 25px;
     width: 100%;
     background-color: cadetblue;
 }
@@ -270,6 +274,176 @@ ul{
     align-items: center;
     justify-content: center;
 }
+
+/* This End section is for media queries */
+/* Phone Size */
+@media (max-width: 480px) {
+    .nav-bar > h1 {
+        padding-left: 5%;
+    }
+
+    .nav-bar-middle {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Hero {
+        height: 300px;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .car-box {
+        width: 90%;
+    }
+
+    .my-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        padding: 0 5%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empty {
+        height: 15px;
+    }
+
+    .my-border {
+        width: 90%;
+    }
+
+    #rick-roll {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .nav-bar > h1 {
+        padding-left: 10%;
+    }
+
+    .nav-bar-middle {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Hero {
+        height: 400px;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .car-box {
+        width: 90%;
+    }
+
+    .my-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        padding: 0 5%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empty {
+        height: 15px;
+    }
+
+    .my-border {
+        width: 90%;
+    }
+
+    #rick-roll {
+        width: 90%;
+    }
+}
+
+/* for laptops and desktop */
+@media (min-width: 1025px) {
+    .nav-bar > h1 {
+        padding-left: 20%;
+    }
+
+    .nav-bar-middle {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #Hero {
+        height: 700px;
+    }
+
+    .main-container {
+        width: 65%;
+    }
+
+    .car-box {
+        width: 65%;
+    }
+
+    .my-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img {
+        width: 500px;
+        height: auto;
+    }
+
+    .text-content {
+        padding: 0 10%;
+    }
+
+    .footer {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .empty {
+        height: 25px;
+    }
+
+    .my-border {
+        width: 600px;
+    }
+
+    #rick-roll {
+        width: 600px;
+    }
+}
+
 
 
 
