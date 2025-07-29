@@ -50,13 +50,24 @@ a{
 
 /* A div designed to look like a ticket */
 #ticket{
-    background-color: beige; 
+    background-color: beige;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 80%; 
-    height: 80%; 
+    height: auto; 
     margin: auto; 
     border: 2px solid black;
     text-align: center;
 }
+
+ul{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
 .box{
     position: absolute;
     top: 80%;
@@ -114,6 +125,23 @@ a{
     background: url("../images/scouts.png") no-repeat center center/cover;
     background-position: top center;
     position: relative;
+    border-bottom: #3a3a3a 10px solid;
+}
+#Tank{
+    height: 700px;
+    width: 100%;
+    background: url("../images/tank.png") no-repeat center center/cover;
+    background-position: top center;
+    position: relative;
+    border-top: #3a3a3a 10px solid;
+}
+#Ghillie{
+    height: 700px;
+    width: 100%;
+    background: url("../images/ghillie.png") no-repeat center center/cover;
+    background-position: top center;
+    position: relative;
+    border-top: #3a3a3a 10px solid;
     border-bottom: #3a3a3a 10px solid;
 }
 
