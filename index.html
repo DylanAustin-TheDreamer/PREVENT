@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safeguarding</title>
+    <!-- Link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- To link CSS -->
+
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -50,12 +53,18 @@
         </div>
     </section>
 
-    <section class="container">
-        <div>
+    <section class="main-container" style="text-align: center; padding: 10%;">
+        <br>
+        <br>
+        <br>
+        <div style="border-radius: 50%; padding: 20%; background-color: cadetblue;">
             <h2 class="title">PREVENT is a community effort...</h2>
+            <div style="color: whitesmoke;">
             <p class="text">It is the attempt to recognize and report concerns about an individual's behavior or circumstances that may indicate a risk of harm.</p>
             <p class="text">See below a visual representation of a community working together.</p>
-            <p class="text"><strong><em>By working together, we can create a safer environment for everyone.</em> - Unkown See'r Sayer</strong></p>
+            </div>
+            <br>
+            <p class="text"><strong><em>By working together, we can create a safer environment for everyone.</em> - Unkown See'r Say'r</strong></p>
         </div>
     </section>
 
@@ -64,7 +73,7 @@
     <section>
     <div style="padding-top: 200px;">
         <div class="car-box">
-        <div class="card">
+        <div class="my-card">
             <div>
             <img src="assets/images/scout-crouch.png" alt="A scout crouching on a cliff, looking through his binoculars" class ="img">
             </div>
@@ -72,7 +81,7 @@
                 <h2>Help! Help!</h2>
             </div>
         </div>
-        <div class="card">
+        <div class="my-card">
             <div>
             <img src="assets/images/carrot.png" alt="A scout crouching on a cliff, looking through his binoculars" class ="img">
             </div>
@@ -81,7 +90,7 @@
                 <p>Just after preparing our sunday dinner, a carrot went on an extreme protest and hid all the veg!</p>
             </div>
         </div>
-        <div class="card">
+        <div class="my-card">
             <div>
                 <img src="assets/images/family-happy.png" alt="A scout crouching on a cliff, looking through his binoculars" class ="img">
             </div>
@@ -101,15 +110,15 @@
         <div id="Ghillie">
 
         </div>
-        <div class="container flex" style="padding-top: 20px; padding-bottom: 20px;">
-            <div class="border" style="margin: 0; background-color: cadetblue; padding: 20px;">
+        <div class="main-container flex" style="padding-top: 60px; padding-bottom: 20px;">
+            <div class="my-border" style="margin: 0; background-color: cadetblue; padding: 20px;">
                 <div style="text-align: center; padding-left: 25px; color: whitesmoke;">
                 <h2>Subscribe to our Newsletter</h2>
                 <p>Stay updated with the latest news and events related to PREVENT. Enter your email below to subscribe.</p>
                 <p>We respect your privacy and will never share your information with third parties.</p>
                 </div>
                 <br>
-                <form>
+                <form id="subscribeForm" onsubmit="return document.getElementById('email').checkValidity()" on>
                 <input id="email" type="email" placeholder="Enter your email address" class="input-field" required>
                 
                 <input type="submit" value="Subscribe" class="input-field" style="background-color: rgb(150, 194, 74);">
@@ -120,10 +129,28 @@
             <div id="rick-roll">
                 <h2>If you want to read more about how we handle your information - click the 'Read More' button below</h2>
                 <a href="rickroll.html" target="_blank" noopener>
-                    <input type="button" value="Read More" class="input-field" style="background-color: rgb(150, 194, 74);">
+                    <input type="button" value="Read More" class="input-field" style="background-color: rgb(150, 194, 74); width: 200px !important;">
                 </a>
+                
+                <!-- This is for the handle modal section -->
+                <div id="subscribeModal" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: cadetblue;">
+                                <h5 class="modal-title" style=" background-color: rgb(84, 185, 74); color: whitesmoke; padding: 5px;">Received!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="text-align: center; background-color: cadetblue; color: whitesmoke;">
+                                <p style="padding: 0px; padding-right: 35px;">You are now subscribed to receive email notifcations from us.</p>
+                                <p style="padding: 0px; padding-right: 35px;">We will let you know about PREVENT's operations in your area and inform you of various success stories.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: cadetblue;">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </article>
 
     <section class="empty">
@@ -140,5 +167,9 @@
             <p>All rights reserved.</p>
         <div>
     </footer>
+
+    <!-- Link to bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="assets/js/script.js"></script>
 </body>
 </html>

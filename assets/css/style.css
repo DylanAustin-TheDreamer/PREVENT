@@ -1,6 +1,9 @@
 /* Strictly to set the background color of the html document */
 html{
-    background-color:cadetblue;
+    background-color:cadetblue !important;
+}
+html, body {
+    background-color: cadetblue !important;
 }
 
 /* wild card */
@@ -154,7 +157,7 @@ ul{
 }
 
 /* For the main body of my html page */
-.container{
+.main-container{
     background-color: rgb(216, 176, 127);
     width: 65%;
     height: 100%;
@@ -176,7 +179,7 @@ ul{
 
 
 /* for images on the page */
-.card {
+.my-card {
     display: flex;
     background-color: rgb(216, 176, 127);
     width: 100%;
@@ -227,7 +230,7 @@ ul{
     background-color: cadetblue;
 }
 
-.border{
+.my-border{
     border-radius: 15px;
     border: #3a3a3a 5px solid;
     width: 600px;
