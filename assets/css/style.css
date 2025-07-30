@@ -17,7 +17,6 @@ html, body {
 p, h2, h3, h4 {
     padding: 10px;
     word-spacing: 2;
-    width: 500px;
 }
 h3{
     text-decoration: underline;
@@ -45,8 +44,8 @@ a{
     margin: auto;
     background-color: rgb(37, 177, 100);
     border:  2px solid black;
-    width: 60%;
-    height: 25%;
+    width: 550px;
+    height: 100px;
     text-align: center;
     padding: 15px;
 }
@@ -57,7 +56,7 @@ a{
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    width: 80%; 
+    width: 550px; 
     height: auto; 
     margin: auto; 
     border-top: 8px solid black;
@@ -77,15 +76,15 @@ ul{
 
 .box{
     position: absolute;
-    top: 80%;
-    left: 40%;
+    top: 650px;
+    left: 650px;
     transform: translateY(-30%);
     background-color: rgba(216, 176, 127, 0.8);
     width: 40vw;
     height: 40vh;
     padding: 2rem;
     border: 2px solid black;
-    border-radius: 35%;
+    border-radius: 1100px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
 }
 
@@ -106,20 +105,19 @@ ul{
     box-shadow: 0 10px 10px 5px #3a3a3a;
     border: top 10px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline center;
-    padding-left: 17%
 }
 .nav-bar > h1{
     text-transform: capitalize;
-    padding-left: 20%;
+    padding-left: 200px;
     padding-top: 20px;
 }
 
 .nav-bar-middle{
     background-color: rgb(216, 176, 127);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
-    width: 80%;
+    width: 65%;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -128,7 +126,7 @@ ul{
 /* for the hero image */
 #Hero{
     height: 700px;
-    width: 100%;
+    width: 100vw;
     background: url("../images/scouts.png") no-repeat center center/cover;
     background-position: top center;
     position: relative;
@@ -136,7 +134,7 @@ ul{
 }
 #Tank{
     height: 700px;
-    width: 100%;
+    width: 1920px;
     background: url("../images/tank.png") no-repeat center center/cover;
     background-position: top center;
     position: relative;
@@ -144,7 +142,7 @@ ul{
 }
 #Ghillie{
     height: 700px;
-    width: 100%;
+    width: 1920px;
     background: url("../images/ghillie.png") no-repeat center center/cover;
     background-position: top center;
     position: relative;
@@ -161,37 +159,36 @@ ul{
 }
 
 /* For the main body of my html page */
-.main-container{
+.main-container {
     background-color: rgb(216, 176, 127);
-    width: 65%;
-    height: 100%;
-    margin: auto;
-    padding-top: 8%;
+    width: 65%; /* Match nav-bar-middle exactly */
+    max-width: 65%; /* Keep this for smaller screens */
+    min-width: 480px; /* Never smaller than 480px on mobile */
+    height: auto;
+    margin: 0 auto; /* Centers horizontally */
+    padding: 180px 20px 20px 20px; /* Add side padding for mobile */
 }
 
-/* For the box around the cars */
-.car-box{
-    
-    width: 65%;
-    margin: auto;
+/* For the box around the cars - ADD THIS BACK */
+.car-box {
+    width: 65%; /* Match nav-bar-middle exactly */
+    margin: 0 auto; /* Centers horizontally */
     padding: 10px;
     padding-bottom: 25px;
-    border: #3a3a3a 8px dotted;
+    border: #3a3a3a 8px dotted; /* Your dotted border */
     border-radius: 15px;
 }
-
-
 
 /* for images on the page */
 .my-card {
     display: flex;
     background-color: rgb(216, 176, 127);
-    width: 100%;
+    width: 100%; /* Takes full width of parent container */
+    margin: 0 auto 20px auto; /* Centers and adds bottom margin */
     border: 2.5px solid black;
     border-radius: 15px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 1);
-    display: flex;
-    align-items: center; /* vertically center the items */
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
 }
@@ -222,9 +219,8 @@ ul{
     height: 5%;
     box-shadow: 0 10px 10px 10px #3a3a3a;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline center;
-    padding-left: 17%;
     z-index: 99;
 }
 
@@ -234,16 +230,15 @@ ul{
     background-color: cadetblue;
 }
 
-.my-border{
+.my-border {
     border-radius: 15px;
     border: #3a3a3a 5px solid;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     height: auto;
-    margin: 0;
-    align-items: center;
+    margin: 0 auto; /* Centers horizontally */
+    padding: 20px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .input-field{
@@ -275,172 +270,52 @@ ul{
     justify-content: center;
 }
 
+.bootstrap-section {
+    width: 65%; /* Match nav-bar-middle exactly */
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
 /* This End section is for media queries */
 /* Phone Size */
 @media (max-width: 480px) {
-    .nav-bar > h1 {
-        padding-left: 5%;
-    }
-
     .nav-bar-middle {
-        width: 100%;
+        width: 95%;
         flex-direction: column;
-        align-items: center;
     }
-
-    #Hero {
-        height: 300px;
+    
+    .main-container, .car-box, .bootstrap-section {
+        width: 95%;
+        padding: 100px 10px 20px 10px;
     }
-
-    .main-container {
-        width: 90%;
-    }
-
-    .car-box {
-        width: 90%;
-    }
-
+    
     .my-card {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-
+    
     .img {
         width: 100%;
-        height: auto;
+        max-width: 300px;
     }
-
+    
     .text-content {
-        padding: 0 5%;
+        padding: 10px;
     }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .empty {
-        height: 15px;
-    }
-
-    .my-border {
-        width: 90%;
-    }
-
-    #rick-roll {
-        width: 90%;
+    
+    .hero-div {
+        padding-right: 5%;
     }
 }
 
 /* Tablets */
-@media (max-width: 768px) {
-    .nav-bar > h1 {
-        padding-left: 10%;
-    }
-
-    .nav-bar-middle {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #Hero {
-        height: 400px;
-    }
-
-    .main-container {
-        width: 90%;
-    }
-
-    .car-box {
-        width: 90%;
-    }
-
-    .my-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img {
-        width: 100%;
-        height: auto;
-    }
-
-    .text-content {
-        padding: 0 5%;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .empty {
-        height: 15px;
-    }
-
-    .my-border {
-        width: 90%;
-    }
-
-    #rick-roll {
-        width: 90%;
-    }
-}
-
-/* for laptops and desktop */
-@media (min-width: 1025px) {
-    .nav-bar > h1 {
-        padding-left: 20%;
-    }
-
-    .nav-bar-middle {
-        width: 80%;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #Hero {
-        height: 700px;
-    }
-
-    .main-container {
+@media (min-width: 768px) and (max-width: 1920px) {
+    .main-container, .car-box, .bootstrap-section {
         width: 65%;
     }
-
-    .car-box {
-        width: 65%;
-    }
-
-    .my-card {
-        flex-direction: row;
-        align-items: center;
-    }
-
+    
     .img {
         width: 500px;
-        height: auto;
-    }
-
-    .text-content {
-        padding: 0 10%;
-    }
-
-    .footer {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .empty {
-        height: 25px;
-    }
-
-    .my-border {
-        width: 600px;
-    }
-
-    #rick-roll {
-        width: 600px;
     }
 }
 
