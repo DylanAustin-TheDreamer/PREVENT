@@ -209,10 +209,14 @@ ul{
 .text-content {
     display: inline;
     flex: 1;
-    padding: 0 10%;
+    padding: 5% 5%;
+
     text-align: center;
     z-index: 1;
     width: auto;
+    background-color: cadetblue;
+    border: #3a3a3a 2px solid;
+    color: whitesmoke;
 }
 
 .footer{
@@ -299,6 +303,8 @@ ul{
 
 .my-list-content{
     font-size: x-large; padding-left: 92px;
+    text-align: center;
+    padding: 10px;
 }
 
 /* This End section is for media queries */
