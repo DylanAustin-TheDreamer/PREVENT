@@ -37,6 +37,10 @@ a{
     font-size: 1.2rem;
     padding: 10px;
     transition: all 0.3s ease-in-out;
+    &:hover {
+        color: rgb(37, 177, 100);
+        text-decoration: underline;
+    }
 }
 
 /* A background div for a title atop a ticket */
