@@ -91,6 +91,9 @@ ul{
 /* Strictly for identifying text elements to give them an underline decoration */
 #underline{
     text-decoration: underline;
+    line-height: 1.5;
+    text-underline-offset: 5px; /* Pushes underline away from text */
+    font-weight: bold;
 }
 
 /* for top nav bar */
@@ -306,10 +309,14 @@ ul{
         display: flex;
         flex-direction: column;
         font-size: smaller;
+        box-shadow: none;
     }
 
+    
+
     #title > h1 {
-        padding-left: 100%;
+        display: flex;
+        justify-content: center;
         text-align: center;
         font-size: medium;
     }
@@ -321,16 +328,28 @@ ul{
     }
 
     .nav-bar{
-        height: fit-content;
+        height: 50px;
         width: 100vw;
         padding-bottom: 3%;
+        background-color: rgb(216, 176, 127) !important;
+
+    }
+
+    nav a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        display: none;
     }
 
     .footer{
         height: 7%;
         width: 100vw;
-        padding: 10px;
+        padding: 20px;
         font-size: smaller;
+        background-color: rgb(216, 176, 127) !important;
     }
     
     .main-container, .car-box, .bootstrap-section {
@@ -381,7 +400,7 @@ ul{
     .hero-div {
         padding-right: 0; /* Remove the right padding on mobile */
         justify-content: center;
-        top: 100px; /* Adjust the top position */
+        top: 50px; /* Adjust the top position */
         padding-bottom: 400px;
     }
 
@@ -532,9 +551,12 @@ ul{
     }
     .nav-bar-middle {
         width: 100vw;
-        text-size-adjust: smaller;
         display: flex;
         flex-direction: row;
+    }
+
+    .nav-bar-middle > p{
+        font-size: medium;
     }
 
     #title > h1 {
