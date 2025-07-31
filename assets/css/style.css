@@ -305,14 +305,16 @@ ul{
         text-size-adjust: smaller;
         display: flex;
         flex-direction: column;
+        font-size: smaller;
     }
 
     #title > h1 {
-        padding-left: 60%;
+        padding-left: 100%;
         text-align: center;
+        font-size: medium;
     }
     a {
-        font-size: small;
+        font-size: smaller;
         padding: 5px;
         text-align: center;
         padding-left: 10%;
@@ -328,6 +330,7 @@ ul{
         height: 7%;
         width: 100vw;
         padding: 10px;
+        font-size: smaller;
     }
     
     .main-container, .car-box, .bootstrap-section {
@@ -554,6 +557,7 @@ ul{
         height: 7%;
         width: 100vw;
         padding: 10px;
+        font-size: smaller;
     }
     
     .main-container, .car-box, .bootstrap-section {
