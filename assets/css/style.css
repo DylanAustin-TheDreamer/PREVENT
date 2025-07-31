@@ -127,7 +127,7 @@ ul{
 #Hero{
     height: 700px;
     width: 100%;
-    background: url("../images/scouts.png") no-repeat center center/cover;
+    background: url("../images/scouts-small.png") no-repeat center center/cover;
     background-position: top center;
     position: relative;
     border-bottom: #3a3a3a 10px solid;
@@ -296,7 +296,7 @@ ul{
 
 /* This End section is for media queries */
 /* Phone Size */
-@media (min-width: 344px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
     * {
         box-sizing: border-box;
     }
@@ -374,13 +374,14 @@ ul{
     #Hero {
         height: 200px !important; /* Remove top padding */
         width: 100% !important;
+        background: url("../images/scouts-x-small.png") no-repeat center center/cover;
     }
 
     /* Also fix the hero positioning */
     .hero-div {
         padding-right: 0; /* Remove the right padding on mobile */
         justify-content: center;
-        top: 125px; /* Adjust the top position */
+        top: 100px; /* Adjust the top position */
         padding-bottom: 400px;
     }
 
@@ -533,18 +534,17 @@ ul{
         width: 100vw;
         text-size-adjust: smaller;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #title > h1 {
-        padding-left: 60%;
+        padding-left: 0;
         text-align: center;
     }
     a {
         font-size: large;
         padding: 5px;
-        text-align: center;
-        padding-left: 10%;
+        text-align: right;
     }
 
     .nav-bar{
@@ -602,6 +602,7 @@ ul{
     #Hero {
         height: 400px !important; /* Remove top padding */
         width: 100vw !important;
+        background: url("../images/scouts-small.png") no-repeat center center/cover;
     }
 
     /* Also fix the hero positioning */
@@ -758,6 +759,10 @@ ul{
     .my-card {
         flex-direction: column;
         text-align: center;
+    }
+
+    nav{
+        flex-direction: flex-end;
     }
 }
 
