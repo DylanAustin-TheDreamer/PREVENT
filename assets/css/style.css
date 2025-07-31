@@ -38,7 +38,7 @@ a{
     padding: 10px;
     transition: all 0.3s ease-in-out;
     &:hover {
-        color: rgb(37, 177, 100);
+        color: rgb(122, 122, 122);
         text-decoration: underline;
     }
 }
