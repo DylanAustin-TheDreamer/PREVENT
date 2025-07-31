@@ -85,7 +85,11 @@ Responsive design tested from 320px mobile to 1200px+ desktop screens
 
 ### Code Validation
 - HTML: Validated through W3C HTML Validator
+- ![HTML validation](image-2.png)
+
+
 - CSS: Validated through W3C CSS Validator
+- ![CSS validation](image-3.png)
 
 ### Lighthouse
 
